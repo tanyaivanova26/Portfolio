@@ -12,6 +12,7 @@
 .link{
 	text-decoration: none;
 	color: black;
+	font-size: 12px;
 }
 .menu-container{
 	display: flex;
@@ -65,12 +66,19 @@
 .about-me-text{
 	max-width: 400px;
 }
+.about-me-photographer{
+	font-size: 12px;
+}
 .experience{
 	display: flex;
-	justify-content: space-between;
+	justify-content: 50%;
+	margin: 40px 0 0 0;
 }
 .work-experience{
 	max-width: 400px;
+}
+h3{
+	font-size: 12px;
 }
 .my-latest-works{
 	background:#d1bac8; 
@@ -81,6 +89,7 @@
 }
 .projects{
 	padding: 18px 0 0 0;
+	font-size: 12px;
 }
 .links-works{
 	display: flex;
@@ -91,4 +100,16 @@
 .works{
 	width: 364px;
 	height: 234px;
+}
+.freelance{
+	padding: 0 0 0 135px;
+}
+.working-period{
+	font-size: 12px;
+}
+.subtitle-small{
+	font-size: 12px;
+}
+.cv{
+	font-size: 12px;
 }
