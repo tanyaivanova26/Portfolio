@@ -1,0 +1,292 @@
+@font-face{
+	src:url('fonts/PoppinsLight.ttf');
+	font-family: 'Poppins';
+	font-weight: 300;
+}
+@font-face{
+	src:url('fonts/PoppinsReg.ttf');
+	font-family: 'Poppins';
+	font-weight: 400;
+}
+@font-face{
+	src:url('fonts/PoppinsSem.ttf');
+	font-family: 'Poppins';
+	font-weight: 600;
+}
+@font-face{
+	src:url('fonts/Poppins-Bold.ttf');
+	font-family: 'Poppins';
+	font-weight: 700;
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+	font-family: 'Poppins';
+}
+.title{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 4.78px;
+	margin: 0;
+}
+.links{
+	font-size: 12px;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	width: 250px;
+	padding:0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 2.8;
+	letter-spacing: 2.87px;
+}
+.link{
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+}
+.menu-container{
+	display: flex;
+	justify-content: space-between;
+}
+.header{
+	background-image: url(images/main.jpg);
+	height: 714px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	padding: 28px 41px 0 34px;
+	position: relative;
+}
+.header-container{
+	position:absolute;
+	top: 243px;
+}
+.about-text{
+	font-size: 12px;
+	margin: 32px 0 59px 0px;
+	width: 399px;
+	line-height: 1.6;
+	letter-spacing: 0.48px;
+	font-weight: 400;
+}
+.subtitle{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 0.9;
+	letter-spacing:2px;
+}
+.button{
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 24.2px;
+	font-size: 12px;
+	text-align: center;
+	background: transparent;
+	padding: 3px 42px 3px 43px;
+	width: 194px;
+	text-transform: uppercase;
+	line-height: 2.8;
+	letter-spacing: 2.47px;
+}
+.contact{
+	margin-right: 14px;
+}
+.about{
+	display: flex;
+	justify-content: space-around;
+	margin: 34px 33px 50px 35px; 
+}
+.portfolio-image{
+	width: 308px;
+	height: 340px;
+	margin-bottom: 54px;
+}
+.subtitle-name{
+	margin: 54px;
+}
+.resume{
+	margin-left: 55px;
+}
+.about-me-container{
+	display: flex;
+	justify-content: space-between;
+}
+.about-me-text{
+	max-width: 400px;
+	margin: 0;
+}
+.about-me-photographer{
+	font-size: 12px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.5);
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	margin-top: 28px;
+	width: 350px;
+}
+.about-me-photographer-cv{
+	font-size: 12px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.5);
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	margin:58px 0 32px 88px;
+	width: 340px;
+}
+.experience{
+	display: flex;
+	justify-content: 50%;
+	margin: 32px 0 0 0;
+}
+.work-experience{
+	width: 350px;
+}
+h3{
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.6;
+	letter-spacing: 0.48px;
+	margin: 28px 0 7px;
+	width: 260px;
+}
+.my-latest-works{
+	background:#d1bac8; 
+}
+.latest-works-title{
+	text-align: center;
+	padding: 57px 0 44px 0;
+}
+.projects{
+	padding: 18px 0 0 0;
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.6);
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+}
+.links-works{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0 33px 65px 37px;
+}
+.portfolio-item{
+	position: relative;
+}
+.portfolio-item::before{
+	content: "";
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.5);
+}
+.portfolio-link{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+}
+.portfolio-hover{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 18px 0 17px 38px;
+}
+.works{
+	width: 364px;
+	height: 234px;
+}
+.freelance{
+	padding:34px 0 0 87px;
+	width: 340px;
+}
+.working-period{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+}
+.subtitle-small{
+	font-size: 12px;
+}
+.cv{
+	font-size: 12px;
+	color: #000;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	font-weight: 700;
+	margin-left: 86px;
+}
+.input{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.3);
+	line-height: 2.8;
+	letter-spacing: 2.16px;
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+	height: 53.6px;
+}
+.textarea{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0,3);
+	line-height: 2.8;
+	letter-spacing: 2.16px;
+	border: none;
+	border-bottom: 5px solid rgba(0,0,0,0.3);
+	width: 360px;
+	height: 171px;
+}
+.text-form{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.6);
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 39px;
+}
+.button-send{
+	border: none;
+	border-radius: 24.2px;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	background: #000;
+	padding: 3px 42px 3px 43px;
+	width: 214px;
+	text-transform: uppercase;
+	line-height: 2.8;
+	letter-spacing: 2.87px;
+	color: #fff;
+}
+.button-send-message{
+	margin: 289px 474px 76px 513px;
+}
+.form-section{
+	position: relative;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	position:absolute;
+	padding: 71px 201px 163px 234px;
+}
+.inputs{
+	display:flex;
+	flex-direction: column; 
+	width: 361px;
+	padding-right: 46px;
+}
