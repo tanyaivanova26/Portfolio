@@ -18,6 +18,22 @@
 	font-family: 'Poppins';
 	font-weight: 700;
 }
+@keyframes animationscale{
+  0%{
+    transform:scale(0.5);
+  }
+  100%{
+    transform:scale(1.5, 1);
+  }
+}
+@keyframes animationrotate{
+	0%{
+		transform: rotate(o);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
 .wrapper{
 	width: 1200px;
 	margin: 0 auto;
@@ -35,16 +51,16 @@
 .links{
 	font-size: 12px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
-	width: 250px;
-	padding:0;
-	margin: 0;
+	width: 252px;
+	padding:6px 0 0 0;
+	margin: 1px -1px 0 2px;
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 2.8;
-	letter-spacing: 2.87px;
- }
+	letter-spacing: 2.4px;
+}
 .link{
 	text-decoration: none;
 	color: #000;
@@ -53,25 +69,27 @@
 .menu-container{
 	display: flex;
 	justify-content: space-between;
+	margin: -5px 0px 0px 4px;
 }
 .header{
 	background-image: url(images/main.jpg);
-	height: 714px;
+	height: 685px;
 	background-size:cover;
 	background-repeat: no-repeat;
 	padding: 28px 41px 0 34px;
 	position: relative;
+	top: -8px
 }
 .header-container{
 	position:absolute;
-	top: 243px;
+	top: 226px;
 }
 .about-text{
 	font-size: 12px;
 	margin: 32px 0 59px 0px;
-	width: 399px;
+	width: 402px;
 	line-height: 1.6;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.6px;
 	font-weight: 400;
 }
 .subtitle{
@@ -79,20 +97,36 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 0.9;
-	letter-spacing:2px;
+	letter-spacing:2.7px;
+}
+.subtitle-hover{
+	padding:0;
+}
+.name{
+	padding: 0;
 }
 .button{
 	color: #fff;
 	border: 2px solid #fff;
 	border-radius: 24.2px;
 	font-size: 12px;
+	font-weight: 800;
 	text-align: center;
 	background: transparent;
-	padding: 3px 42px 3px 43px;
+	padding: 3px 42px 2px 43px;
 	width: 194px;
 	text-transform: uppercase;
 	line-height: 2.8;
 	letter-spacing: 2.47px;
+}
+.button-works{
+	padding-top: 3px;
+	margin: 0 0 0 11px;
+}
+.button:hover{
+	color: #6a4a4c;
+	cursor: pointer;
+	background: #fff;
 }
 .contact{
 	margin-right: 14px;
@@ -100,12 +134,12 @@
 .about{
 	display: flex;
 	justify-content: space-around;
-	margin: 34px 33px 50px 35px; 
+	margin: 33px 23px 58px 35px; 
 }
 .portfolio-image{
 	width: 308px;
 	height: 340px;
-	margin-bottom: 54px;
+	margin-bottom: 50px;
 }
 .subtitle-name{
 	margin: 54px;
@@ -113,11 +147,13 @@
 .download{
 	display: flex;
 	justify-content: left;
+	margin: -1px 0 0 -14px;
 }
 .icon-download{
 	width: 21px;
 	height: 21px;
 	padding-left: 90px;
+	margin-top: -2px;
 }
 .cv{
 	font-size: 12px;
@@ -127,8 +163,11 @@
 	font-weight: 700;
 	margin-left: 12px;
 }
+.cv{
+	animation: animationrotate 2s infinite;
+}
 .resume{
-	margin-left: 55px;
+	margin:-14px 0 0 55px;
 }
 .about-me-container{
 	display: flex;
@@ -159,7 +198,7 @@
 .experience{
 	display: flex;
 	justify-content: 50%;
-	margin: 32px 0 0 0;
+	margin: 52px 0 0 0;
 }
 .work-experience{
 	width: 350px;
@@ -169,18 +208,26 @@ h3{
 	font-weight: 700;
 	line-height: 1.6;
 	letter-spacing: 0.48px;
-	margin: 28px 0 7px;
+	margin: 24px 0 0 0;
 	width: 260px;
 }
+.art-director{
+	max-width: 185px;
+}
 .my-latest-works{
-	background:#d1bac8; 
+	background:#d1bac8;
+	margin:16px 0px 13px 0px; 
 }
 .latest-works-title{
 	text-align: center;
-	padding: 57px 0 44px 0;
+	padding: 40px 0px 28px 8px;;
+}
+.latest-works{
+	letter-spacing: 2px;
+	padding-left: 4px;
+	margin: 16px 0 12px 0;
 }
 .projects{
-	padding: 18px 0 0 0;
 	font-size: 12px;
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0.6);
@@ -214,6 +261,8 @@ h3{
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	margin-left: 2px;
+	padding-bottom: 18px;
 }
 .portfolio-hover{
 	position: absolute;
@@ -222,6 +271,7 @@ h3{
 	padding: 18px 0 17px 38px;
 	opacity: 0;
 	transition: all 2s;
+	margin: 7px 0 11px 0;
 }
 .portfolio-item:hover .portfolio-hover{
 	opacity: 1;
@@ -237,18 +287,26 @@ h3{
 	height: 234px;
 }
 .freelance{
-	padding:34px 0 0 87px;
+	padding:34px 0 0 74px;
 	width: 340px;
+}
+.freelance-h3{
+	width: 190px;
 }
 .working-period{
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 1.5;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.9px;
 	color: rgba(0, 0, 0, 0.6);
 }
 .subtitle-small{
 	font-size: 12px;
+	text-transform: lowercase;
+	letter-spacing: 0.48px;
+}
+.name-small{
+	line-height: 1px;
 }
 .input{
 	text-transform: uppercase;
@@ -256,10 +314,11 @@ h3{
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0.3);
 	line-height: 2.8;
-	letter-spacing: 2.16px;
+	letter-spacing: 2.5px;
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.3);
 	height: 53.6px;
+	margin: 19px 0 2px 0;
 }
 .textarea{
 	text-transform: uppercase;
@@ -267,11 +326,12 @@ h3{
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0,3);
 	line-height: 2.8;
-	letter-spacing: 2.16px;
+	letter-spacing: 3px;
 	border: none;
 	border-bottom: 5px solid rgba(0,0,0,0.3);
 	width: 360px;
 	height: 171px;
+	padding-top: 9px;
 }
 .text-form{
 	font-size: 12px;
@@ -289,7 +349,7 @@ h3{
 	font-weight: 700;
 	text-align: center;
 	background: #000;
-	padding: 3px 42px 3px 43px;
+	padding: 7px 57px 3px 32px;;
 	width: 214px;
 	text-transform: uppercase;
 	line-height: 2.8;
@@ -301,14 +361,24 @@ h3{
 	position: absolute;
 	content: '';
 	display: block;
-	top: 31px;
-	right: 17px;
-	background: url("https://image.flaticon.com/icons/svg/1783/1783412.svg");
-	width: 11px;
-	height: 8px;
+	top: 15px;
+	right: 27px;
+	background: url("images/right-arrow.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 12px;
+}
+.button-send:hover{
+  color: #000;
+  cursor: pointer;
+  background: #d1bfcb;
+}
+.button-send{
+	animation: animationscale 3s infinite;
 }
 .button-send-message{
-	margin: -69px 474px 76px 513px;
+	margin: -123px 474px 76px 513px;
 }
 .form-section{
 	position: relative;
@@ -316,11 +386,23 @@ h3{
 .form{
 	display: flex;
 	justify-content: center;
-	padding: 71px 201px 163px 234px;
+	padding: 58px 201px 163px 237px;
 }
 .inputs{
 	display:flex;
 	flex-direction: column; 
 	width: 361px;
 	padding-right: 46px;
+	height: 185px;
+}
+.input-name{
+	height: 43px;
+	padding-top: 3px;
+	margin: 12px 0 6px 0;
+}
+.input-email{
+	height: 57px;
+}
+.input-subject{
+	height: 61px;
 }
