@@ -34,10 +34,35 @@
 		transform: rotate(360deg);
 	}
 }
+@media(max-width: 639px){
+	.header-name{
+		display: none;
+	}
+}
+@media(min-width:640px) and (min-width: 1279px){
+
+}
+@media(min-width: 1280px){
+	
+}
 .wrapper{
 	width: 1200px;
 	margin: 0 auto;
 	font-family: 'Poppins';
+}
+.header{
+	background-image: url(images/main.jpg);
+	height: 685px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	padding: 28px 41px 0 34px;
+	position: relative;
+	top: -8px
+}
+.header__menu{
+	display: flex;
+	justify-content: space-between;
+	margin: -5px 0px 0px 4px;
 }
 .title{
 	font-size: 20px;
@@ -66,31 +91,9 @@
 	color: #000;
 	font-size: 12px;
 }
-.menu-container{
-	display: flex;
-	justify-content: space-between;
-	margin: -5px 0px 0px 4px;
-}
-.header{
-	background-image: url(images/main.jpg);
-	height: 685px;
-	background-size:cover;
-	background-repeat: no-repeat;
-	padding: 28px 41px 0 34px;
-	position: relative;
-	top: -8px
-}
-.header-container{
+.header-name{
 	position:absolute;
 	top: 226px;
-}
-.about-text{
-	font-size: 12px;
-	margin: 32px 0 59px 0px;
-	width: 402px;
-	line-height: 1.6;
-	letter-spacing: 0.6px;
-	font-weight: 400;
 }
 .subtitle{
 	font-size: 20px;
@@ -99,11 +102,13 @@
 	line-height: 0.9;
 	letter-spacing:2.7px;
 }
-.subtitle-hover{
-	padding:0;
-}
-.name{
-	padding: 0;
+.header__about{
+	font-size: 12px;
+	margin: 32px 0 59px 0px;
+	width: 402px;
+	line-height: 1.6;
+	letter-spacing: 0.6px;
+	font-weight: 400;
 }
 .button{
 	color: #fff;
@@ -113,71 +118,52 @@
 	font-weight: 800;
 	text-align: center;
 	background: transparent;
-	padding: 3px 42px 2px 43px;
+	padding: 3px 42px 0px 43px;
 	width: 194px;
 	text-transform: uppercase;
 	line-height: 2.8;
 	letter-spacing: 2.47px;
-}
-.button-works{
-	padding-top: 3px;
-	margin: 0 0 0 11px;
 }
 .button:hover{
 	color: #6a4a4c;
 	cursor: pointer;
 	background: #fff;
 }
-.contact{
-	margin-right: 14px;
+.button_works{
+	padding-top: 3px;
+	margin: 0 0 0 11px;
 }
 .about{
 	display: flex;
 	justify-content: space-around;
-	margin: 33px 23px 58px 35px; 
+	margin: 32px 11px 59px 37px; 
 }
-.portfolio-image{
+.image-portfolio{
+	margin:0 -64px 0 0;
+}
+.image-portfolio__image{
 	width: 308px;
 	height: 340px;
 	margin-bottom: 50px;
 }
-.subtitle-name{
-	margin: 54px;
-}
-.download{
-	display: flex;
-	justify-content: left;
-	margin: -1px 0 0 -14px;
-}
-.icon-download{
-	width: 21px;
-	height: 21px;
-	padding-left: 90px;
-	margin-top: -2px;
-}
-.cv{
+.subtitle__small{
 	font-size: 12px;
-	color: #000;
-	line-height: 1.5;
+	text-transform: lowercase;
 	letter-spacing: 0.48px;
-	font-weight: 700;
-	margin-left: 12px;
-}
-.cv{
-	animation: animationrotate 2s infinite;
 }
 .resume{
-	margin:-14px 0 0 55px;
+	margin:-13px -25px 5px 55px;
+	padding-left: 44px;
 }
-.about-me-container{
+.introduction{
 	display: flex;
 	justify-content: space-between;
 }
-.about-me-text{
+.introduction__text{
 	max-width: 400px;
-	margin: 0;
+	margin: 0 0 0 20px;
 }
-.about-me-photographer{
+.introduction__paragraph{
 	font-size: 12px;
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.5);
@@ -186,24 +172,40 @@
 	margin-top: 28px;
 	width: 350px;
 }
-.about-me-photographer-cv{
+.resume__cv{
+	margin:0 11px 0 -8px;
+}
+.introduction__paragraph_cv{
+	margin:58px 28px 27px 85px;
+}
+.introduction__download{
+	displayintroductionontent: left;
+	margin: -1px 0 -1px -3px;
+}
+.introduction__icon-download{
+	width: 21px;
+	height: 21px;
+	padding-left: 90px;
+	margin: 0px 0px -5px -5px;
+}
+.introduction__link{
 	font-size: 12px;
-	font-weight: 700;
-	color: rgba(0, 0, 0, 0.5);
+	color: #000;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
-	margin:58px 0 32px 88px;
-	width: 340px;
+	font-weight: 700;
+	padding:4px 0px 0px 9px;
+	animation: animationrotate 2s infinite;
 }
-.experience{
+.work{
 	display: flex;
 	justify-content: 50%;
-	margin: 52px 0 0 0;
+	margin: 52px 0 0 19px;
 }
-.work-experience{
+.experience{
 	width: 350px;
 }
-h3{
+.experience__position{
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 1.6;
@@ -211,23 +213,34 @@ h3{
 	margin: 24px 0 0 0;
 	width: 260px;
 }
-.art-director{
-	max-width: 185px;
+.experience__period{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.9px;
+	color: rgba(0, 0, 0, 0.6);
 }
-.my-latest-works{
+.experience__position_transport{
+	width: 185px;
+}
+.experience__freelance{
+	padding:34px 0 0 74px;
+	width: 340px;
+}
+.latest-works{
 	background:#d1bac8;
 	margin:16px 0px 13px 0px; 
 }
-.latest-works-title{
+.latest-works__title{
 	text-align: center;
 	padding: 40px 0px 28px 8px;;
 }
-.latest-works{
+.latest-works__subtitle{
 	letter-spacing: 2px;
 	padding-left: 4px;
 	margin: 16px 0 12px 0;
 }
-.projects{
+.caption{
 	font-size: 12px;
 	font-weight: 600;
 	color: rgba(0, 0, 0, 0.6);
@@ -256,7 +269,24 @@ h3{
 	background: rgba(255,255,255,0.5);
 	transition: all 2s;
 }
-.portfolio-link{
+.portfolio-item__image{
+	width: 364px;
+	height: 234px;
+}
+.portfolio-item__hover{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 18px 0 17px 38px;
+	opacity: 0;
+	transition: all 2s;
+	margin: 7px 0 -3px 0;
+}
+.subtitle-hover{
+	padding:0 0 29px 0;
+	margin-bottom: -15px;
+}
+.portfolio-item__link{
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
@@ -264,16 +294,7 @@ h3{
 	margin-left: 2px;
 	padding-bottom: 18px;
 }
-.portfolio-hover{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: 18px 0 17px 38px;
-	opacity: 0;
-	transition: all 2s;
-	margin: 7px 0 11px 0;
-}
-.portfolio-item:hover .portfolio-hover{
+.portfolio-item:hover .portfolio-item__hover{
 	opacity: 1;
 }
 .portfolio-item:hover::before{
@@ -282,33 +303,27 @@ h3{
 .portfolio-item:hover{
 	cursor: pointer;
 }
-.works{
-	width: 364px;
-	height: 234px;
+.form-section{
+	position: relative;
 }
-.freelance{
-	padding:34px 0 0 74px;
-	width: 340px;
+.form-section__caption{
+	text-align: center;
+	margin-top: 39px;
 }
-.freelance-h3{
-	width: 190px;
+.form__container{
+	display: flex;
+	justify-content: center;
+	padding: 58px 371px 163px 237px;
+	width: 765px;
 }
-.working-period{
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 1.5;
-	letter-spacing: 0.9px;
-	color: rgba(0, 0, 0, 0.6);
+.form__inputs{
+	display:flex;
+	flex-direction: column; 
+	width: 360px;
+	padding-right: 46px;
+	height: 185px;
 }
-.subtitle-small{
-	font-size: 12px;
-	text-transform: lowercase;
-	letter-spacing: 0.48px;
-}
-.name-small{
-	line-height: 1px;
-}
-.input{
+.form__input{
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 600;
@@ -320,7 +335,21 @@ h3{
 	height: 53.6px;
 	margin: 19px 0 2px 0;
 }
-.textarea{
+.form__input:focus{
+	outline: none;
+}
+.form__input_name{
+	height: 43px;
+	padding-top: 3px;
+	margin: 12px 0 6px 0;
+}
+.form__input_email{
+	height: 57px;
+}
+.form__input_subject{
+	height: 61px;
+}
+.form__textarea{
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 600;
@@ -331,36 +360,24 @@ h3{
 	border-bottom: 5px solid rgba(0,0,0,0.3);
 	width: 360px;
 	height: 171px;
-	padding-top: 9px;
+	padding-top: 7px;
 }
-.textarea:focus{
+.form__textarea:focus{
 	outline: none;
 }
-.text-form{
-	font-size: 12px;
-	color: rgba(0, 0, 0, 0.6);
-	line-height: 1.5;
-	letter-spacing: 0.48px;
-	font-weight: 600;
-	text-align: center;
-	margin-top: 39px;
+.form__button{
+	margin: -120px 168px 150px 514px;
 }
-.button-send{
+.button_black{
 	border: none;
-	border-radius: 24.2px;
-	font-size: 12px;
-	font-weight: 700;
-	text-align: center;
 	background: #000;
 	padding: 7px 57px 3px 32px;;
 	width: 214px;
-	text-transform: uppercase;
-	line-height: 2.8;
 	letter-spacing: 2.87px;
 	color: #fff;
 	position: relative;
 }
-.button-send::before{
+.button_black::before{
 	position: absolute;
 	content: '';
 	display: block;
@@ -372,44 +389,16 @@ h3{
 	width: 16px;
 	height: 12px;
 }
-.button-send:hover{
+.button_black:hover{
   color: #000;
   cursor: pointer;
   background: #d1bfcb;
 }
-.button-send{
+.button_black{
 	animation: animationscale 0s infinite;
 }
-.button-send-message{
-	margin: -123px 168px 150px 514px;
-}
-.form-section{
-	position: relative;
-}
-.form-container{
-	display: flex;
-	justify-content: center;
-	padding: 58px 371px 163px 237px;
-	width: 765px;
-}
-.inputs{
-	display:flex;
-	flex-direction: column; 
-	width: 360px;
-	padding-right: 46px;
-	height: 185px;
-}
-.input:focus{
-	outline: none;
-}
-.input-name{
-	height: 43px;
-	padding-top: 3px;
-	margin: 12px 0 6px 0;
-}
-.input-email{
-	height: 57px;
-}
-.input-subject{
-	height: 61px;
-}
+
+
+
+
+
